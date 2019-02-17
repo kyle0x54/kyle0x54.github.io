@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kyle0x54's Not-So-Secret Diary"
+title                    : "The Art of Programming"
 title_separator          : "-"
 name                     : "kyle0x54"
 description              : "kyle0x54's technical blog."
