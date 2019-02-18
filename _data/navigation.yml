@@ -6,8 +6,10 @@ main:
     url: /programming/
   - title: "Research"
     url: /research/
-  - title: "Tools"
+  - title: "Tool"
     url: /tools/
+  - title: "Configuration"
+    url: /configurations/
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

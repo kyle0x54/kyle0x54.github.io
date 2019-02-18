@@ -290,6 +290,9 @@ collections:
   tools:
     output: true
     permalink: /:collection/:path/
+  configurations:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -304,7 +307,7 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _research
+  # _programming
   - scope:
       path: ""
       type: programming
@@ -315,7 +318,7 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _projects
+  # _research
   - scope:
       path: ""
       type: research
@@ -330,6 +333,17 @@ defaults:
   - scope:
       path: ""
       type: tools
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  # _configurations
+  - scope:
+      path: ""
+      type: configurations
     values:
       layout: single
       author_profile: true
