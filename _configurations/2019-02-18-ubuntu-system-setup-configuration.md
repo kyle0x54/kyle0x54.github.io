@@ -25,6 +25,12 @@ sudo apt install axel rdesktop filezilla smplayer digikam okular typora tig keep
 sudo apt install tldr unity-tweak-tool compizconfig-settings-manager
 sudo pip install percol pygments
 
+# git plugins
+sudo apt-get install git-extras
+sudo apt install npm
+sudo npm install -g diff-so-fancy
+sudo npm install -g commitizen
+
 # oh-my-zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
@@ -55,6 +61,28 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.unstage 'reset HEAD'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+
+# 开启diff-so-fancy并配色
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
+git config --global color.ui true
+
+git config --global color.diff-highlight.oldNormal "red bold"
+git config --global color.diff-highlight.oldHighlight "red bold 52"
+git config --global color.diff-highlight.newNormal "green bold"
+git config --global color.diff-highlight.newHighlight "green bold 22"
+
+git config --global color.diff.meta "227"
+git config --global color.diff.frag "magenta bold"
+git config --global color.diff.commit "227 bold"
+git config --global color.diff.old "red bold"
+git config --global color.diff.new "green bold"
+git config --global color.diff.whitespace "red reverse"
+
+# 为某个项目配置commitizen，该项目主文件夹下执行如下命令
+npm init --yes
+commitizen init cz-conventional-changelog --save --save-exact
 ```
 
 生成ssh-key
@@ -133,6 +161,8 @@ alias ..='cd ..'\n\
 ```
 
 ## 8. 其他
+- Krusader Terminal 设置
+in Krusader menu -> Settings -> Configure Krusader... -> Tab "General" -> Terminal: gnome-terminal --working-directory %d
 - teamviewer
 - cuda和cudnn
     - [install cuda](http://www.jianshu.com/p/eb42f81f4e47)
