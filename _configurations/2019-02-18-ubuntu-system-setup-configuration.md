@@ -124,14 +124,14 @@ plugins=([...], zsh-autosuggestions zsh-syntax-highlighting)
 ```
 并使之立即生效
 ```sh
-source activate ~/.zshrc
+source ~/.zshrc
 ```
 
 ### 5.2 安装配置autojump
 ```sh
 sudo apt install autojump
 echo ". /usr/share/autojump/autojump.sh" >> ~/.zshrc
-source activate ~/.zshrc
+source ~/.zshrc
 ```
 
 
